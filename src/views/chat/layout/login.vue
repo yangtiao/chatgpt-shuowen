@@ -26,21 +26,26 @@ const userInfo = ref({
 })
 
 const rules: FormRules = {
-  email: {
-    required: true,
-    trigger: ['blur', 'input'],
-    validator(rule, value) {
-      // 自定义验证  规则
-      const regMobile = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
-      if (!value)
-        return new Error('请输入邮箱')
+	email: {
+		required: true,
+		message: '请输入手机号',
+		trigger: ['input', 'blur']
+	},
+  // email: {
+  //   required: true,
+  //   trigger: ['blur', 'input'],
+  //   validator(rule, value) {
+  //     // 自定义验证  规则
+  //     const regMobile = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+  //     if (!value)
+  //       return new Error('请输入邮箱')
 
-      else if (!regMobile.test(value))
-        return new Error('请输出正确邮箱格式')
+  //     else if (!regMobile.test(value))
+  //       return new Error('请输出正确邮箱格式')
 
-      return true
-    },
-  },
+  //     return true
+  //   },
+  // },
   passWord: [
     {
       required: true,

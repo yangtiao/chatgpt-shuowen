@@ -32,7 +32,7 @@ export default {
     failed: '操作失败',
     verify: '验证',
     unauthorizedTips: '未经授权，请先登录。',
-    email: '邮箱',
+    email: '手机号',
     passWord: '密码',
     captcha: '验证码',
     addEmailTips1: '请输入邮箱',

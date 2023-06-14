@@ -66,9 +66,9 @@ if (!needPermission.value)
             <NTabPane name="login" tab="登录">
               <login />
             </NTabPane>
-            <NTabPane name="register" tab="注册">
+            <!-- <NTabPane name="register" tab="注册">
               <register />
-            </NTabPane>
+            </NTabPane> -->
           </NTabs>
         </div>
       </div>
